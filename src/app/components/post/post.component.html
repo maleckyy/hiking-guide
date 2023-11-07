@@ -1,0 +1,21 @@
+<div class="post-container">
+
+    <img *ngIf="post.id%2===1" src={{post.image}} alt={{post.pretitle}} class="image">
+
+    <div class="text-side">
+        <div class="opacity-number">{{post.id<10? '0'+post.id : post.id}}</div>
+        <div class="pretitle"><span>─────</span> {{post.pretitle | uppercase}}</div>
+        <div class="title">{{post.title}}</div>
+
+        <div class="content">{{post.content}}</div>
+
+        <a href="#" class="anchor">read more  <fa-icon [icon]="faArrowRight"></fa-icon></a>
+
+    </div>
+
+    <img *ngIf="post.id%2===0" src={{post.image}} alt={{post.pretitle}} class="image">
+
+
+
+
+</div>

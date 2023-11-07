@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;700&family=Playfair+Display:wght@400;500;800&display=swap");
+:root {
+  --color-bg: #0B1D26;
+  --color-white: #FFFFFF;
+  --color-accent: #fcd06a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */
