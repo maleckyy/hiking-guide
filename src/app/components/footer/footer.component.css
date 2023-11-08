@@ -1,5 +1,5 @@
 footer {
-  padding: 0 229px;
+  padding: 0 10%;
   height: 280px;
   margin-bottom: 120px;
   display: flex;
@@ -10,7 +10,7 @@ footer .first-panel {
   position: relative;
   height: 100%;
   cursor: default;
-  padding-right: 410px;
+  width: 50%;
 }
 footer .first-panel .company-name {
   font-family: "Playfair Display", serif;
@@ -26,7 +26,8 @@ footer .first-panel .desc {
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 32px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   color: var(--color-white);
 }
 footer .first-panel .copy-rights {
@@ -45,6 +46,8 @@ footer .second-panel {
   gap: 16px;
   align-items: start;
   cursor: default;
+  min-width: 240px;
+  width: 13%;
 }
 footer .second-panel .panel-title {
   padding-bottom: 8px;
@@ -65,4 +68,41 @@ footer .second-panel .panel-element {
 footer .second-panel .panel-element:hover {
   transform: scale(1.03);
   opacity: 0.9;
+}
+@media only screen and (max-width: 1200px) {
+  footer .first-panel {
+    padding-right: 100px;
+  }
+}
+@media only screen and (max-width: 970px) {
+  footer {
+    padding: 0;
+    transform: scale(0.8);
+  }
+  footer .first-panel {
+    padding-right: 50px;
+  }
+  footer .second-panel {
+    min-width: 190px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  footer {
+    gap: 20px;
+  }
+  footer .first-panel {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  footer .first-panel .copy-rights {
+    position: relative;
+    margin-top: 15px;
+  }
 }/*# sourceMappingURL=footer.component.css.map */

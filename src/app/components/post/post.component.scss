@@ -1,98 +1,108 @@
-.post-container{
+.post-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding-bottom: 200px;
 
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 141px;
-    padding-bottom: 200px;
+  .text-side {
+    position: relative;
 
-    .text-side{
-        // width: 632px;
-        // height: 439px;
-        position: relative;
-
-        padding-left: 150px;
-        .opacity-number{
-
-            font-size: 240px;
-            opacity: 10%;
-            font-family: 'Lexend', sans-serif;
-            font-weight: 700;
-            color: var(--color-white);
-            letter-spacing: -12px;
-            position: absolute;
-            top: -140px;
-            left: 0px;
-
-        }
-    
-        .pretitle{
-            color: var(--color-accent);
-            font-family: 'Lexend', sans-serif;
-            letter-spacing: 6px;
-            font-size: 18px;
-            font-weight: 800;
-            padding-bottom: 27px;
-            span{
-                letter-spacing: 0px;
-                
-            }
-
-        }
-        .title{
-            font-family: 'Playfair Display', serif;
-            font-size: 64px;
-            letter-spacing: -1px;
-            color: var(--color-white);
-            line-height: 68px;
-            padding-bottom: 27px;
-
-        }
-    
-        .content{
-            font-size: 18px;
-            font-family: 'Lexend', sans-serif;
-            color: var(--color-white);
-            // letter-spacing: -1px;
-            line-height: 32px;
-            padding-bottom: 27px;
-            text-align: left;
-
-
-
-        }
-
-
-        .anchor{
-            font-family: 'Lexend', sans-serif;
-            font-size: 18px;
-            color: var(--color-accent);
-            text-decoration: 0;
-
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            letter-spacing: -0.4px;
-            transition: all 0.3s;
-
-            &:hover{
-                transform: scale(1.07);
-                padding-left: 18px;
-
-            }
-        }
-    
+    padding-left: 150px;
+    .opacity-number {
+      font-size: 240px;
+      opacity: 10%;
+      font-family: "Lexend", sans-serif;
+      font-weight: 700;
+      color: var(--color-white);
+      letter-spacing: -12px;
+      position: absolute;
+      top: -140px;
+      left: 0px;
     }
 
-
-    .image{
-        width: 566px;
-
+    .pretitle {
+      color: var(--color-accent);
+      font-family: "Lexend", sans-serif;
+      letter-spacing: 6px;
+      font-size: 18px;
+      font-weight: 800;
+      padding-bottom: 27px;
+      span {
+        letter-spacing: 0px;
+      }
+    }
+    .title {
+      font-family: "Playfair Display", serif;
+      font-size: 64px;
+      letter-spacing: -1px;
+      color: var(--color-white);
+      line-height: 68px;
+      padding-bottom: 27px;
     }
 
+    .content {
+      font-size: 18px;
+      font-family: "Lexend", sans-serif;
+      color: var(--color-white);
+      // letter-spacing: -1px;
+      line-height: 32px;
+      padding-bottom: 27px;
+      text-align: left;
+    }
 
+    .anchor {
+      font-family: "Lexend", sans-serif;
+      font-size: 18px;
+      color: var(--color-accent);
+      text-decoration: 0;
 
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      letter-spacing: -0.4px;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.07);
+        padding-left: 18px;
+      }
+    }
+  }
+
+  .image {
+    width: 566px;
+  }
+  @media only screen and (max-width: 1440px) {
+    padding-bottom: 150px;
+    .text-side {
+      padding: 0 50px;
+    }
+    .image {
+      width: 30%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    padding-bottom: 150px;
+    .text-side {
+      padding: 0 50px;
+      padding-bottom: 30px;
+    }
+    .image {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .text-side {
+      padding: 0 5%;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    transform: scale(0.9);
+    .text-side {
+      padding: 0 3px;
+      padding-bottom: 30px;
+    }
+  }
 }
-
-

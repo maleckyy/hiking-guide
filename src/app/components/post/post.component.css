@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 141px;
+  gap: 10%;
   padding-bottom: 200px;
 }
 .post-container .text-side {
@@ -66,4 +66,41 @@
 }
 .post-container .image {
   width: 566px;
+}
+@media only screen and (max-width: 1440px) {
+  .post-container {
+    padding-bottom: 150px;
+  }
+  .post-container .text-side {
+    padding: 0 50px;
+  }
+  .post-container .image {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .post-container {
+    padding-bottom: 150px;
+  }
+  .post-container .text-side {
+    padding: 0 50px;
+    padding-bottom: 30px;
+  }
+  .post-container .image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .post-container .text-side {
+    padding: 0 5%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .post-container {
+    transform: scale(0.9);
+  }
+  .post-container .text-side {
+    padding: 0 3px;
+    padding-bottom: 30px;
+  }
 }/*# sourceMappingURL=post.component.css.map */

@@ -1,82 +1,113 @@
-footer{
+footer {
+  padding: 0 10%;
+  height: 280px;
+  margin-bottom: 120px;
 
-    padding: 0 229px;
-    height: 280px;
-    margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 
+  .first-panel {
+    position: relative;
+    height: 100%;
+    cursor: default;
+    width: 50%;
+    .company-name {
+      font-family: "Playfair Display", serif;
+      color: var(--color-white);
+      font-size: 32px;
+      letter-spacing: 1%;
+      font-weight: 400;
+      padding-bottom: 24px;
+    }
 
+    .desc {
+      font-family: "Lexend", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: -1px;
+      line-height: 32px;
+      width: 100%;
+      max-width: 300px;
+      color: var(--color-white);
+    }
+    .copy-rights {
+      color: var(--color-white);
+      opacity: 40%;
+      font-family: "Lexend", sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: -1px;
+      position: absolute;
+      bottom: 0px;
+    }
+  }
+
+  .second-panel {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
     align-items: start;
+    cursor: default;
+    min-width: 240px;
+    width: 13%;
 
-    .first-panel{
+    .panel-title {
+      padding-bottom: 8px;
+      font-size: 24px;
+      color: var(--color-accent);
+      font-weight: 400;
+      letter-spacing: -0.5px;
+      font-family: "Lexend", sans-serif;
+    }
+
+    .panel-element {
+      color: var(--color-white);
+      font-weight: 200;
+      font-size: 18px;
+      font-family: "Lexend", sans-serif;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.03);
+        opacity: 0.9;
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .first-panel {
+      padding-right: 100px;
+    }
+  }
+  @media only screen and (max-width: 970px) {
+    padding: 0;
+    transform: scale(0.8);
+
+    .first-panel {
+      padding-right: 50px;
+    }
+
+    .second-panel {
+      min-width: 190px;
+    }
+  }
+  @media only screen and (max-width: 630px) {
+    gap: 20px;
+    .first-panel {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+    margin-bottom: 50px;
+    .first-panel {
+      .copy-rights {
         position: relative;
-        height: 100%;
-        cursor: default;
-        padding-right: 410px;
-        .company-name{
-
-            font-family: 'Playfair Display', serif;
-            color: var(--color-white);
-            font-size: 32px;
-            letter-spacing: 1%;
-            font-weight: 400;
-            padding-bottom: 24px;
-
-        }
-
-        .desc{
-            font-family: 'Lexend', sans-serif;
-            font-size: 17px;
-            font-weight: 400;
-            letter-spacing: -1px;
-            line-height: 32px;
-            width: 300px;
-            color: var(--color-white);
-        }
-        .copy-rights{
-            color: var(--color-white);
-            opacity: 40%;
-            font-family: 'Lexend', sans-serif;
-            font-size: 16px;
-            font-weight: 200;
-            letter-spacing: -1px;
-            position: absolute;
-            bottom: 0px;
-        }
-
-
+        margin-top: 15px;
+      }
     }
-
-    .second-panel{
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        align-items: start;
-        cursor: default;
-        .panel-title{
-            padding-bottom: 8px;
-            font-size: 24px;
-            color: var(--color-accent);
-            font-weight: 400;
-            letter-spacing: -0.5px;
-            font-family: 'Lexend', sans-serif;
-        }
-
-        .panel-element{
-            color: var(--color-white);
-            font-weight: 200;
-            font-size: 18px;
-            font-family: 'Lexend', sans-serif;
-            cursor: pointer;
-            transition: all 0.2s;
-            
-            &:hover{
-                transform: scale(1.03);
-                opacity: 0.9;
-
-            }
-        }
-    }
-
+  }
 }
